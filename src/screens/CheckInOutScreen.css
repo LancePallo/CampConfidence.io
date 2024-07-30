@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 0;
+    width: 24%;
+    height: 100%;
+  }
+  
+  .person-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 370%;
+    max-width: 10000px;
+  }
+  
+  .person-name {
+    font-size: 1.5rem;
+    flex: 1;
+  }
+  
+  .check-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-view {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .modal-text {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .input {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .modal-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .modal-button {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    background-color: #f44336;
+  }
+  
+  .done-button {
+    background-color: #4CAF50;
+  }
+  
+  .no-data-text {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+  

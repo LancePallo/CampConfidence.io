@@ -1,0 +1,42 @@
+/* DayScreen.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+  }
+  
+  .text {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .buttonsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #007BFF;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 25px; /* Rounded corners */
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttonText {
+    color: white;
+    font-size: 20px;
+    align-items: center;
+  }  

@@ -1,26 +1,35 @@
-import logo from './logo.svg';
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import LoginScreen from './screens/LoginScreen';
+import WeekScreen from './screens/WeekScreen';
+import DayScreen from './screens/DayScreen';
+import ChoiceScreen from './screens/ChoiceScreen';
+import CheckInOutScreen from './screens/CheckInOutScreen';
+import RosterScreen from './screens/RosterScreen';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = (username, password) => {
+    if (username === 'BestCamp' && password === '1665') {
+      setIsLoggedIn(true);
+    } else {
+      alert('Invalid credentials');
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Router>
+        
+         
+            <RosterScreen onLogin={handleLogin} />
+          
+        
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
